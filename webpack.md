@@ -10,10 +10,10 @@
 ## Preface
 Webpack is incredibly useful. Below is a little post that explains a step by step process of setting up your own Angular 1.5 / Webpack environment. If you'd like to see how everything looks when you're finished checkout this lovely little repository. [https://github.com/rob-moore/meanTodo](https://github.com/rob-moore/meanTodo). I've seperated out the branches in a way that I hope is helpful for everyone. There are only two branches to pay attention to are:
 
-###master
+### master
 This is the completed project with everything working. It's a small to-do list app that I created. 
 
-###boilerplate
+### boilerplate
 This branch is just the bare minimum of what you need. This features a `webpack.config` file that is set up with a hot reloading dev-server.
 
 Now, lets dive into Webpack!
@@ -38,7 +38,7 @@ Here's a quick list of the tools that we'll be using for this project:
 ## Creating package.json
 We're going to skim over this partially. Creating a package.json is as simple as intializing npm in your project folder and using npm to install our dev depencies. Here's how to do that.
 
-1.`npm init`
+1. `npm init`
 2. `npm install --save-dev autoprefixer-loader babel-loader babel-preset-es2015 bootstrap-loader css-loader file-loader imports-loader node-sass raw-loader resolve-url-loader sass-loader style-loader url-loader webpack webpack-dev-server`
 3. `npm install --save angular angular-ui-router bootstrap-sass express jquery lodash`
 
@@ -142,7 +142,7 @@ This is our CSS preprocessor. There are loaders for just about all of them so fe
         test: /\.(woff2?|ttf|eot|svg)$/,
         loader: 'url?limit=10000',
       },
-This handles all of our fonts and svgs. Basically it tests to see if they're under a certain size (in this case: 10000 bytes) and will then load them inline if they are small enough or require them from another source if they are too big.
+This is our `file-loader` and `url-loader` setup. It tests to see if fonts and svgs are under a certain size (in this case: 10000 bytes) and will then load them from the URL and if they are small enough, otherwise it will use the `file-loader` to load the assets.
 
       {
         test: /bootstrap-sass\/assets\/javascript?\//,
