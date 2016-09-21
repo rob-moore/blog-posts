@@ -16,7 +16,7 @@ This is the completed project with everything working. It's a small to-do list a
 ###boilerplate
 This branch is just the bare minimum of what you need. This features a `webpack.config` file that is set up with a hot reloading dev-server.
 
-Now, lets dive into using Webpack!
+Now, lets dive into Webpack!
 
 ## Webpack
 Webpack, in theory, does something that's very simple. It bundles together all of files that you throw at it in order to minify all of the fancy front-end tools that you're using into a package that is ready to deploy to the web. However, setting things up for webpack can be a stumbling block for people more familiar with older build tools such as Gulp or Grunt. We're going to be taking a look at starting a project from the ground up using Webpack as our build tool. By the end of this, we'll have a development environment for Angular 1.5, Bootstrap, jQuery and SCSS. 
