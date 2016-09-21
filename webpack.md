@@ -19,6 +19,8 @@ This branch is just the bare minimum of what you need. This features a `webpack.
 Now, lets dive into Webpack!
 
 ## Webpack
+First and foremost! Make sure that you checkout the [webpack documentation](https://webpack.github.io/docs/) if you run into any issues or have any questions!
+
 Webpack, in theory, does something that's very simple. It bundles together all of files that you throw at it in order to minify all of the fancy front-end tools that you're using into a package that is ready to deploy to the web. However, setting things up for webpack can be a stumbling block for people more familiar with older build tools such as Gulp or Grunt. We're going to be taking a look at starting a project from the ground up using Webpack as our build tool. By the end of this, we'll have a development environment for Angular 1.5, Bootstrap, jQuery and SCSS. 
 
 One of my favorite things about Webpack is that it's kind of an all-in-one suite when it comes to do frontend development. Besides bundling everything into a nice little package, it has it's own dev-server that features the ability to hot-reload whenever a change is detected in the files that you're editing. 
@@ -32,8 +34,6 @@ Here's a quick list of the tools that we'll be using for this project:
 * Angular 1.5
 * Bootstrap
 * jQuery
-
-
 
 ## Creating package.json
 We're going to skim over this partially. Creating a package.json is as simple as intializing npm in your project folder and using npm to install our dev depencies. Here's how to do that.
